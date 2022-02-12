@@ -1,0 +1,37 @@
+{	
+    "localizedName": "Alloy Curcible",
+    "description": "[yellow]An ultimate Alloy Smelter That require massive power to create a lot of surge alloy require surge alloy for power source",
+    "type": "GenericSmelter",
+    "details": "Thanks hexenvjariadgflouridentgonial#0937 for a Sprite",
+	"size": 6,
+	"hasPower": true,
+	"hasItems": true,
+	"itemCapacity": 100,
+	"craftTime": 180,
+	"craftEffect": "smeltsmoke",
+	"updateEffect": "none",
+	"consumes": {
+		"power": 10,
+		"items": {
+			"items": [
+               "silicon/18",
+               "titanium/10",
+               "copper/16",
+			   "surge-alloy/5",
+               "lead/20"
+			]
+		}
+	},
+	"requirements": [
+        "surge-alloy/1000",
+        "copper/1200",
+		"thorium/700",
+		"plastanium/450",
+        "titanium/400",
+        "silicon/500",
+        "lead/900"
+	],
+	"category": "crafting",
+	"research": "alloy-smelter",
+	"outputItem": "surge-alloy/20"
+}

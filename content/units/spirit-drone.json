@@ -1,0 +1,63 @@
+{
+        "localizedName": "Spirit Drone",
+        "type": "flying",
+        "canHeal": true,
+        "controller": "RepairAI",
+	    "description": "[lime]Heal Damaged Structres But Smaller Than Mega (v5)",
+    "research": "poly",
+        "lowAltitude": true,
+        "speed": 1.5,
+        "rotateSpeed": 10,
+        "accel": 0.1,
+        "drag": 0.1,
+        "flying": true,
+        "health": 100,
+        "hitSize": 10,
+        "armor": 0,
+        "itemCapacity": 35,
+        "engineOffset": 6,
+        "engineSize": 2.5,
+        "range": 128,
+        "targetAir": true,
+        "commandLimit": 8,
+        "faceTarget": true,
+        "weapons": [
+            {
+       "name": "spirit-drone-weapon",
+       "shootCone": 15,
+       "mirror": false,
+    "top": false,
+    "x": 0,
+    "y": 0,
+    "hitSize": 4,
+    "shootY": 3,
+    "reload": 25,
+    "shootSound": "pew",
+    "bullet": {
+        "shootEffect": "shootHeal",
+        "despawnEffect": {
+            "type": "ParticleEffect",
+            "line": true,
+            "particles": 6,
+            "lifetime": 20,
+            "offset": 30,
+            "length": 25,
+            "cone": -360,
+            "lenFrom": 5,
+            "lenTo": 0,
+            "colorFrom": "84f491",
+            "colorTo": "84f491"
+            },
+          "type": "LaserBoltBulletType",
+    "damage": 8.5,
+    "collidesTeam": true,
+    "speed": 8,
+    "healPercent": 5,
+    "frontColor": "ffffff",
+    "backColor": "84f491",
+    "lifetime": 20
+
+}
+}
+]
+}

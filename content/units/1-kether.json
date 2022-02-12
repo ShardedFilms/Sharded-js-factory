@@ -1,0 +1,53 @@
+{
+  "localizedName": "Kether"
+  "research": {
+  "parent": "nova"
+  "requirements": [
+  "titanium/150"
+  "silicon/300"
+  "graphite/200"
+  ]
+  }
+  "description": "[orange]Fires dense bullets at all nearby enemies."
+  "type": "mech"
+  "armor": 7
+  "commandLimit": 8
+  "speed": 0.6
+  "hitSize": 12
+  "flying": false
+  "health": 200
+  "range": 60
+  "immunities": [
+      "burning"
+      "melting"
+      ]
+  "weapons": [
+    {
+    "name": "dense-gun"
+      "x": 5.5
+      "y": 0
+      "reload": 20
+      "top": false
+      "mirror": true
+      "alternate": true
+      "shootY": 3
+      "shots": 1
+      "recoil": 1.5
+      "rotate": false
+      "shootSound": "shootSnap"
+      "shootCone": 18
+    "bullet": {
+      "type": "BasicBulletType"
+      "collidesAir": true
+      "speed": 4
+      "damage": 15
+      "width": 8
+      "height": 10
+      "lifetime": 45
+      "frontColor": "ffffff"
+      "backColor": "ffa665"
+       }
+    }
+  ]
+  }
+  

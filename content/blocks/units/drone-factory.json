@@ -1,0 +1,25 @@
+{
+"type": "UnitFactory",
+"description": "Creates Drones.",
+"localizedName": "Drone Factory",
+"size": 2,
+"consumes": {
+"power": 1
+},
+"plans": [
+  {
+    "unit": "sharded-spirit-drone",
+    "requirements": [
+        {"item": "silicon", "amount": 20},
+        {"item": "titanium", "amount": 15}
+    ],
+    "time": 2400
+  }
+],
+"requirements": [
+    {"item": "copper", "amount": 50},
+    {"item": "lead", "amount": 40}
+],
+"category": "units",
+"research": "air-factory"
+}

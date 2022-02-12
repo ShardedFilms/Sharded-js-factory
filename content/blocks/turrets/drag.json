@@ -1,0 +1,39 @@
+{
+    "localizedName": "Purple Sappper",
+	"description": "Lyra's Small spaaing turret",
+    "type": "powerTurret",
+	"size": 1,
+	"health": 320,
+	"reloadTime": 24,
+	"range": 64,
+	"shots" : 1,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"powerUse": 2,
+    "update": true,
+    "shootSound": "sap",
+	"recoilAmount" : 0.5,
+	"restitution" : 0.05, 
+	"rotateSpeed": 15,
+    "shootType": {
+        "type": "SapBulletType",
+        "sapStrength": 1,
+        "length": 70,
+        "status": "sapped",
+        "damage": 30,
+        "shootEffect": "shootSmall",
+        "hitColor": "bf92f9",
+        "color": "bf92f9",
+        "despawnEffect": "none",
+        "width": 0.40,
+        "lifetime": 35,
+        "knockback": -1.25
+        
+      },
+      "requirements": [
+	    "titanium/60",
+        "silicon/40"
+	],
+	"category": "turret",
+	"research": "arc"
+}

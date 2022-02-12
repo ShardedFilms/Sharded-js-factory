@@ -1,0 +1,10 @@
+{
+"localizedName": "sand power",
+"description": "by the power of sand.. there was op",
+"speedMultiplier": 0.2,
+"healthMultiplier": 65536,
+"reloadMultiplier": 7.68,
+"damageMultiplier": 65536,
+"damage": -256,
+"buildSpeedMultiplier": 65536
+}

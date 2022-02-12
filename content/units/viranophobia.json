@@ -1,0 +1,112 @@
+{
+        "localizedName": "Virusophobia",
+	"description": "[green] a self duplicating creature...",
+        "research": "flare",
+        "speed": 2.9,
+        "accel": 0.03,
+        "drag": 0.02,
+        "flying": true,
+        "health": 130,
+        "hitSize": 8,
+        "armor": 16,
+        "engineOffset": 7.8,
+        "range": 150,
+        "targetAir": true,
+        "commandLimit": 8,
+
+        "faceTarget": true,
+	    "weapons": [
+	   {
+  "name": "frg",
+    "shootCone": 15,
+    "mirror": true,
+    "alternate": true,
+    "x": 5,
+    "y": 1.8,
+    "reload": 20,
+    "recoil": 0.5,
+    "shootSound": "laser",
+    "bullet": {
+    "shootEffect": "shootHealYellow",
+    "despawnEffect": "shootHealYellow",
+    "type": "LaserBoltBulletType",
+    "damage": 10,
+    "speed": 10,
+    "fragBullet": {
+      "shootEffect": "shootHealYellow",
+      "despawnEffect": "shootHealYellow",
+      "type": "LaserBoltBulletType",
+      "damage": 20,
+      "speed": 4,
+      "frontColor": "ddffdd",
+      "backColor": "84f491",
+      "lifetime": 60},
+    "frontColor": "ddffdd",
+    "backColor": "84f491",
+    "lifetime": 15,
+    "fragBullets": 6
+    }
+  }
+	],
+    "abilities": [
+        {
+                     "type": "UnitSpawnAbility",
+                     "spawnX": 0,
+                     "spawnY": 0,
+                     "unit": "viranophobia",
+                     "spawnTime": 180
+         },{
+          "type": "mindustry.entities.abilities.StatusFieldAbility",
+          "range" : 0,
+          "reload" : 30,
+          "duration" : 1,
+          "activeEffect": {
+            "type": "WaveEffect",
+            "lifetime": 0,
+            "sizeFrom": 0,
+            "sizeTo": 0,
+            "strokeFrom": 0,
+            "strokeTo": 0,
+            "colorFrom": "000000",
+            "colorTo": "000000"
+            },
+          "effect": {
+              "name": "virus",
+              "localizedName": "infected",
+              "permanent": true,
+              "effect": {
+                "type": "multiEffect",
+                "lifetime": 120,
+                "effects": [
+                {
+                "type": "ParticleEffect",
+                "particles": 1,
+                "sizeFrom": 3.3,
+                "sizeTo": 0,
+                "length": 3,
+                "baseLength": 3,
+                "lifetime": 20,
+                "region": "sharded-code1",
+                "colorFrom": "84f491",
+                "colorTo": "ffffff"
+                },
+                {
+                "type": "ParticleEffect",
+                "particles": 1,
+                "sizeFrom": 3.2,
+                "sizeTo": 0,
+                "length": 3,
+                "baseLength": 3,
+                "lifetime": 20,
+                "region": "sharded-code2",
+                "colorFrom": "84f491",
+                "colorTo": "ffffff"
+                }
+              ]
+          }
+      }
+    }
+    ]
+}
+
+

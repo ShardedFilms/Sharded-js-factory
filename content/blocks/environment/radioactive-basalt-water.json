@@ -1,0 +1,12 @@
+{
+"type": "Floor",
+"localizedName": "Radioactive Basalt Water",
+"speedMultiplier": 0.5,
+"variants": 3,
+"statusDuration": 60,
+"isLiquid": "true",
+"albedo": 0.5,
+"status": "corroded",
+"cacheLayer": "water",
+"liquidDrop": "water"
+}

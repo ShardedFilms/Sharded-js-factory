@@ -1,0 +1,118 @@
+type: ItemTurret
+researchCostMultiplier: 10
+description: Fires barrage of explosive flak bullets.
+localizedName: Typhoon
+size: 4
+health: 2400
+reloadTime: 6
+range: 230
+maxAmmo: 40
+inaccuracy: 1
+shots: 4
+spread: 3.5
+alternate: true
+targetAir: true
+targetGround: true
+shootCone: 0.08
+recoilAmount: 1.875
+restitution: 0.06
+rotateSpeed: 6
+shootSound: shootSnap
+hasPower: false
+ammoTypes: {
+    metaglass: {
+        ammoMultiplier: 4
+        damage: 4
+        lifetime: 38
+        speed: 7
+        width: 8.5
+        height: 11.5
+        frontColor: FFFFFF
+        backColor: dddddd
+        hitEffect: flakExplosion
+        shootEffect: shootSmall
+        fragBullet: flakGlassFrag
+        fragBullets: 6
+        fragBullet: {
+            type: BasicBulletType
+            height : 5
+            width : 5
+            spin : 8
+            damage : 6
+            lifetime: 10
+            speed: 2
+        }
+    }
+    plastanium: {
+        ammoMultiplier: 4
+        damage: 6
+        lifetime: 38
+        speed: 7
+        width: 8.5
+        height: 11.5
+        frontColor: FFFFFF
+        backColor: cbd97f
+        hitEffect: flakExplosion
+        shootEffect: shootSmall
+        fragBullet: flakGlassFrag
+        fragBullets: 8
+        fragBullet: {
+            type: BasicBulletType
+            height : 10
+            width : 10
+            spin : 8
+            damage : 11
+            frontColor: FFFFFF
+            backColor: cbd97f
+            lifetime: 10
+            speed: 2
+        }
+    }
+    blast-compound: {
+        ammoMultiplier: 4
+        status: blasted
+        statusDuration: 800
+        speed: 7
+        height: 11.5
+        width: 8.5
+        lifetime: 38
+        damage: 7
+        splashDamage: 70
+        splashDamageRadius: 8
+        knockback: 0.6
+        hitSize: 12
+        frontColor: ffffff
+        backColor: ff795e
+        hitEffect: blastExplosion
+        collidesAir: true
+    }
+    surge-alloy: {
+        ammoMultiplier: 4
+        status: shocked
+        statusDuration: 700
+        speed: 7
+        height: 11.5
+        width: 8.5
+        lifetime: 38
+        damage: 18 
+        knockback: 0.6
+        hitSize: 12
+        frontColor: F3E979FF
+        backColor: D99F6BFF
+        hitEffect: blastExplosion
+        lightning: 6
+        lightningDamage: 3
+        lightningCone: 360
+        lightningLengthRand: 8
+        lightningLength: 5
+        collidesAir: true
+    } 
+}
+requirements: [
+    copper/270
+    titanium/160
+    plastanium/100
+    thorium/210
+]
+category: turret
+research: cyclone

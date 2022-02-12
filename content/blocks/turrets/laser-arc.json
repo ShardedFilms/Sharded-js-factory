@@ -1,0 +1,49 @@
+{
+	"type": "LaserTurret",
+	"localizedName": "LaserBolt",
+	"description": "A powered cheap laser thingy",
+	"size": 3,
+	"health": 2560,
+	"reloadTime": 1,
+	"range": 160,
+	"shots" : 1,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"shootCone" : 20,
+	"powerUse": 5,
+    "coolantMultiplier": 1.0,
+    "liquidCapacity": 400,
+    "update": true,
+    "hasPower": true,
+    "shootEffect": "shootBigSmoke2",
+    "shootShake": 1,
+    "firingMoveFract": 0.5,
+    "shootDuration": 120,
+    "shootSound": "laserBig",
+    "loopSound": "beam",
+	"recoilAmount" : 2,
+	"restitution" : 0.04, 
+	"rotateSpeed": 10,
+	
+      "shootType" : {
+      "type": "ContinuousLaserBulletType",
+      "colors": ["919fe766", "80a9ff99", "a4b8facc", "ffffff"],
+      "damage": 20,
+      "width": 4,
+      "length": 164,
+      "hitEffect": "lightningShoot",
+      "drawSize": 260,
+      "incendChance": 0,
+      "incendSpread": 0,
+      "incendAmount": 0
+	},
+
+	"requirements": [
+	    "titanium/300",
+        "graphite/80",
+        "silicon/160",
+        "osmium/70"
+	],
+	"category": "turret",
+	"research": "volt"
+}

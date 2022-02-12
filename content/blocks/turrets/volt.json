@@ -1,0 +1,38 @@
+{
+    "localizedName": "Voltage",
+	"description": "Fires 3 Lightning Bullet at all enemies",
+    "type": "powerTurret",
+	"size": 2,
+	"health": 600,
+	"reloadTime": 45,
+	"range": 120,
+	"shots" : 3,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"powerUse": 4,
+    "update": true,
+    "shootSound": "spark",
+	"recoilAmount" : 1.5,
+	"restitution" : 0.05, 
+	"rotateSpeed": 5,
+    "shootType": {
+        "type": "LightningBulletType",
+        "shootEffect": "lightningShoot",
+        "status": "shocked",
+        "statusDuration": 80,
+        "lightColor": "a9d8ff",
+        "lightningColor": "a9d8ff",
+        "lightningCone": 10,
+        "damage": 24,
+        "lightningLengthRand": 6,
+        "lightningLength": 24,
+        "collidesAir": true
+      },
+      "requirements": [
+	    "copper/70",
+        "lead/70",
+        "silicon/30"
+	],
+	"category": "turret",
+	"research": "arc"
+}
